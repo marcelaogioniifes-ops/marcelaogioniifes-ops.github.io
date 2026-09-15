@@ -3,268 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BioRascunho | Ciências, Biologia, BNCC e divulgação científica</title>
-<meta name="description" content="BioRascunho, de Marcela Ogioni: materiais didáticos de Ciências e Biologia, BNCC, ENEM, atividades adaptadas, leituras científicas e divulgação científica.">
+<title>Marcela Ogioni | BioRascunho — Biologia, educação e ciência</title>
+<meta name="description" content="Portfólio acadêmico de Marcela Ogioni: Ciências Biológicas, ensino, materiais didáticos, educação inclusiva, ecologia costeira e divulgação científica.">
 <meta name="author" content="Marcela Ogioni do Nascimento">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://marcelaogioniifes-ops.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BioRascunho">
-<meta property="og:title" content="BioRascunho — Biologia em processo">
-<meta property="og:description" content="Ensino, pesquisa, materiais didáticos e divulgação científica em estética de caderno de campo.">
+<meta property="og:title" content="Marcela Ogioni — Biologia em rascunho">
+<meta property="og:description" content="Ensino, pesquisa, materiais didáticos e divulgação científica com estética de caderno de campo.">
 <meta property="og:url" content="https://marcelaogioniifes-ops.github.io/">
-<meta property="og:image" content="https://marcelaogioniifes-ops.github.io/assets/marcela-retrato-foto.jpg">
+<meta property="og:image" content="https://marcelaogioniifes-ops.github.io/assets/marcela-retrato-rascunho.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#efe9d8">
+<meta name="theme-color" content="#ece8d8">
 <style>
 :root{
-  --paper:#efe9d8;--paper2:#f7f2e6;--ink:#263129;--green:#536b4f;--green2:#81947a;
-  --deep:#34483a;--sage:#dce3d2;--terracotta:#b57b61;--tan:#d8c39f;--line:#b9b29f;
-  --white:#fffdf7;--shadow:0 14px 34px rgba(47,58,48,.14);--hand:"Segoe Print","Bradley Hand","Comic Sans MS",cursive;
+  --paper:#ece8d8;--paper2:#f7f4e8;--ink:#28342c;--green:#3f5d45;--sage:#a9b8a0;
+  --sage2:#dce4d6;--moss:#2f4636;--terra:#b77b62;--peach:#ead6c7;--blue:#dce4e3;
+  --line:#bcb6a4;--white:#fffdf8;--shadow:0 14px 34px rgba(42,54,45,.14);
+  --hand:"Segoe Print","Bradley Hand","Comic Sans MS",cursive;--serif:Georgia,"Times New Roman",serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{
-  margin:0;color:var(--ink);font:17px/1.62 Georgia,"Times New Roman",serif;background-color:var(--paper);
-  background-image:
-    radial-gradient(circle at 20% 10%,rgba(83,107,79,.05) 0 2px,transparent 2.5px),
-    radial-gradient(circle at 75% 75%,rgba(181,123,97,.04) 0 1.5px,transparent 2px),
-    repeating-linear-gradient(0deg,rgba(38,49,41,.025) 0 1px,transparent 1px 32px);
-  background-size:38px 38px,44px 44px,100% 32px;
-}
-body:before,body:after{position:fixed;z-index:-1;font-family:var(--hand);color:rgba(83,107,79,.13);pointer-events:none}
-body:before{content:"☘︎  ✧  ≈";left:1.2vw;top:18vh;font-size:clamp(1.8rem,5vw,4.3rem);transform:rotate(-9deg)}
-body:after{content:"DNA  ·  campo  ·  mar";right:1vw;bottom:5vh;font-size:clamp(1rem,2.2vw,1.7rem);transform:rotate(5deg)}
-a{color:var(--deep)}
-a:focus-visible{outline:3px solid var(--terracotta);outline-offset:4px;border-radius:4px}
-.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;background:#fff;padding:.65rem 1rem;z-index:100}
-.wrap{max-width:1180px;margin:auto;padding:0 1.15rem}
-header{position:sticky;top:0;z-index:40;background:rgba(247,242,230,.93);backdrop-filter:blur(12px);border-bottom:1px dashed var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
-.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.05}
-.brand strong{font:700 1.45rem/1 var(--hand);color:var(--deep);letter-spacing:.01em}
-.brand small{font-size:.67rem;letter-spacing:.22em;text-transform:uppercase;margin-top:.28rem;color:#59645c}
-nav ul{display:flex;gap:.82rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-nav a{text-decoration:none;font-size:.82rem;font-weight:700;padding:.3rem .05rem;border-bottom:1px solid transparent}
-nav a:hover{border-bottom-color:var(--green)}
-.hero{padding:4.8rem 0 4rem;position:relative;overflow:hidden}
-.hero:after{
-  content:"pequenas ideias\A grandes impactos";
-  white-space:pre;position:absolute;right:max(1rem,4vw);top:1rem;font:1rem/1.35 var(--hand);color:var(--green);
-  transform:rotate(5deg);border-bottom:2px solid rgba(83,107,79,.45);padding-bottom:.35rem
-}
-.hero-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:3.5rem;align-items:center}
-.portrait-zone{position:relative;max-width:445px;margin:auto}
-.portrait-paper{
-  position:relative;background:var(--white);padding:15px 15px 58px;box-shadow:var(--shadow);
-  transform:rotate(-1.7deg);clip-path:polygon(2% 1%,98% 0,100% 95%,96% 100%,4% 99%,0 94%,1% 5%);
-  border:1px solid rgba(54,72,58,.15)
-}
-.portrait-paper:before,.portrait-paper:after{content:"";position:absolute;background:rgba(211,192,157,.78);height:22px;width:105px;top:-5px;z-index:2}
-.portrait-paper:before{left:8%;transform:rotate(-7deg)}.portrait-paper:after{right:7%;transform:rotate(6deg)}
-.portrait-paper img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.82) contrast(.98);clip-path:polygon(1% 2%,98% 0,100% 98%,3% 100%,0 94%)}
-.portrait-caption{position:absolute;left:18px;right:18px;bottom:13px;text-align:center;font:1.15rem/1.2 var(--hand);color:var(--deep)}
-.doodle{position:absolute;font-family:var(--hand);color:var(--deep);line-height:1.05}
-.doodle.leaf{left:-36px;top:32px;font-size:2.7rem;transform:rotate(-20deg)}
-.doodle.arrow{right:-54px;top:28%;font-size:1rem;transform:rotate(6deg)}
-.doodle.coast{right:-65px;bottom:12px;font-size:1.05rem;color:#587a78;transform:rotate(-6deg)}
-.hero-copy{position:relative}
-.kicker{display:inline-block;font:.82rem/1 var(--hand);letter-spacing:.08em;color:var(--deep);padding:.45rem .7rem;background:var(--sage);transform:rotate(-1deg)}
-h1,h2,h3{line-height:1.12}
-h1{font-size:clamp(3rem,7vw,6rem);margin:.75rem 0 .9rem;letter-spacing:-.035em;font-weight:600}
-h1 .hand{display:block;font-family:var(--hand);font-weight:500;color:var(--deep);transform:rotate(-1deg)}
-.underline{background:linear-gradient(transparent 70%,rgba(129,148,122,.55) 70% 87%,transparent 87%)}
-.lead{font-size:1.16rem;max-width:720px}
-.manifesto{display:grid;grid-template-columns:repeat(4,1fr);gap:.65rem;margin:1.7rem 0 0;border-top:1px solid rgba(83,107,79,.22);padding-top:1.25rem}
-.manifesto div{text-align:center;padding:.6rem .4rem}
-.manifesto b{display:block;font:.95rem/1.1 var(--hand);margin:.3rem 0;color:var(--deep)}
-.mark{
-  width:48px;height:48px;margin:auto;border:1.5px solid var(--deep);border-radius:50%;display:grid;place-items:center;
-  font:700 .8rem/1 var(--hand);transform:rotate(-3deg);background:rgba(255,253,247,.7)
-}
-.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.45rem}
-.btn{
-  display:inline-block;padding:.72rem 1.05rem;text-decoration:none;font-weight:700;background:var(--white);
-  border:1.5px solid var(--deep);box-shadow:4px 4px 0 var(--deep);transition:.16s transform,.16s box-shadow
-}
-.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--deep)}
-.btn.alt{background:var(--deep);color:#fff}.btn.soft{background:#f2dfca}
-section{padding:4.2rem 0}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1.6rem}
-.section-head h2{font-size:clamp(2rem,4vw,3.15rem);margin:0}
-.scribble{font:1rem/1.25 var(--hand);color:var(--green);transform:rotate(-1deg)}
-.grid,.grid-6{display:grid;grid-template-columns:repeat(3,1fr);gap:1.15rem}
-.card{
-  position:relative;background:var(--paper2);border:1px solid rgba(60,75,62,.2);padding:1.35rem;box-shadow:0 7px 18px rgba(45,58,47,.08);
-  clip-path:polygon(1% 1%,99% 0,100% 96%,97% 100%,2% 99%,0 94%)
-}
-.card:nth-child(3n+2){transform:rotate(.45deg)}.card:nth-child(3n){transform:rotate(-.35deg)}
-.card:before{content:"";position:absolute;width:72px;height:18px;background:rgba(216,195,159,.78);top:-8px;left:calc(50% - 36px);transform:rotate(-3deg)}
-.card h3{margin:.42rem 0 .55rem;font-size:1.25rem}
-.tag{font-size:.73rem;font-weight:800;text-transform:uppercase;letter-spacing:.09em;color:var(--green)}
-.badge{float:right;font:700 .68rem/1 var(--hand);border:1px solid var(--green);border-radius:50%;width:42px;height:42px;display:grid;place-items:center;transform:rotate(5deg)}
-.more{display:inline-block;margin-top:.7rem;font-weight:800;text-decoration-style:wavy;text-underline-offset:4px}
-.band{background:rgba(220,227,210,.54);border-top:1px dashed var(--line);border-bottom:1px dashed var(--line)}
-.sales-band{background:rgba(229,204,176,.46);border-top:1px dashed #c09277;border-bottom:1px dashed #c09277}
-.money-band{background:rgba(239,232,216,.75)}
-.note{background:#e7ead9;border-left:5px solid var(--green);padding:1rem 1.2rem}
-.portal-card{min-height:225px}
-.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin-top:1.2rem}
-.time{background:var(--paper2);border:1px dashed var(--green);padding:1rem;transform:rotate(-.35deg)}
-.time:nth-child(even){transform:rotate(.5deg)}.time b{display:block;color:var(--green);font-family:var(--hand)}
-.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:2.2rem;align-items:start}
-.about-note{background:#f8f1df;border:1px solid rgba(83,107,79,.2);padding:1.5rem;clip-path:polygon(1% 0,100% 2%,98% 100%,0 97%);box-shadow:var(--shadow);transform:rotate(-.5deg)}
-.about-note h2{font-family:var(--hand);margin:.15rem 0 1rem}
-.quote{font:1.18rem/1.5 var(--hand);color:var(--deep);border-left:3px solid var(--green);padding-left:1rem;margin:1.5rem 0}
-.contact{background:var(--deep);color:#f7f4e8;position:relative;overflow:hidden}
-.contact:after{content:"folha • mar • escola • ciência";position:absolute;right:2rem;bottom:1rem;color:rgba(255,255,255,.14);font:1.7rem var(--hand);transform:rotate(-4deg)}
-.contact a{color:#fff}.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem}.contact-box{border:1px dashed rgba(255,255,255,.55);padding:1.2rem;background:rgba(255,255,255,.03)}
-footer{padding:1.5rem 1rem;border-top:1px dashed var(--line);text-align:center;font-size:.86rem}
-@media(max-width:950px){
-  .hero-grid{grid-template-columns:1fr}.hero-copy{order:-1}.portrait-zone{max-width:390px}.manifesto{grid-template-columns:1fr 1fr}
-  .grid,.grid-6{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr 1fr}.about,.contact-grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}
-}
-@media(max-width:640px){
-  body:before,body:after{display:none}.hero{padding-top:3.6rem}.hero:after{display:none}h1{font-size:3.25rem}
-  .grid,.grid-6,.timeline,.manifesto{grid-template-columns:1fr}.nav nav{width:100%}.nav ul{gap:.55rem}.doodle{display:none}
-}
+body{margin:0;color:var(--ink);font:16.5px/1.65 var(--serif);background-color:var(--paper);background-image:linear-gradient(rgba(63,93,69,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(63,93,69,.035) 1px,transparent 1px);background-size:30px 30px}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.35;background:radial-gradient(circle at 12% 18%,rgba(183,123,98,.12),transparent 18%),radial-gradient(circle at 86% 44%,rgba(95,122,102,.12),transparent 22%)}
+a{color:var(--moss)}a:focus-visible{outline:3px solid var(--terra);outline-offset:4px;border-radius:3px}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;background:#fff;padding:.6rem 1rem;z-index:100}.wrap{max-width:1180px;margin:auto;padding:0 1.15rem}
+header{position:sticky;top:0;z-index:50;background:rgba(247,244,232,.94);backdrop-filter:blur(12px);border-bottom:1px dashed var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:1.2rem;min-height:76px}.brand{text-decoration:none;display:flex;align-items:center;gap:.7rem}.brandmark{font:2rem/1 var(--hand);transform:rotate(-8deg);color:var(--green)}.brandtext strong{display:block;font:700 1.35rem/1.05 var(--hand);color:var(--moss)}.brandtext small{display:block;margin-top:.26rem;font-size:.64rem;letter-spacing:.19em;text-transform:uppercase;color:#667067}.menu{display:flex;gap:.75rem;list-style:none;margin:0;padding:0;flex-wrap:wrap;justify-content:flex-end}.menu a{text-decoration:none;font:700 .78rem/1.2 var(--serif);padding:.35rem .1rem;border-bottom:1px solid transparent}.menu a:hover{border-bottom-color:var(--green)}
+.hero{position:relative;padding:4.3rem 0 3.6rem;overflow:hidden}.hero:after{content:"observar • perguntar • ensinar • conservar";position:absolute;right:3vw;bottom:.5rem;font:1rem var(--hand);color:rgba(47,70,54,.52);transform:rotate(-2deg)}.hero-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:4rem;align-items:center}.portrait-zone{max-width:420px;margin:auto;position:relative}.portrait-card{margin:0;position:relative;background:#fbf8ee;padding:13px 13px 62px;box-shadow:var(--shadow);transform:rotate(-1.6deg);clip-path:polygon(1% 1%,99% 0,100% 96%,97% 100%,2% 99%,0 94%)}.portrait-card:before,.portrait-card:after{content:"";position:absolute;top:-7px;width:106px;height:24px;background:rgba(177,163,126,.56);z-index:3}.portrait-card:before{left:7%;transform:rotate(-8deg)}.portrait-card:after{right:6%;transform:rotate(7deg)}.portrait-card img{display:block;width:100%;aspect-ratio:4/5.15;object-fit:cover;border:1px solid rgba(46,66,51,.14);filter:contrast(.99) saturate(.88)}.portrait-card figcaption{position:absolute;left:15px;right:15px;bottom:16px;text-align:center;font:1.12rem/1.1 var(--hand);color:var(--moss)}.margin-note{position:absolute;font: .9rem/1.35 var(--hand);color:var(--green);max-width:128px}.margin-note.one{left:-102px;top:52px;transform:rotate(-7deg)}.margin-note.two{right:-98px;bottom:40px;transform:rotate(5deg)}.stem{position:absolute;font:2.7rem var(--hand);color:var(--green);opacity:.55}.stem.a{left:-36px;bottom:15px;transform:rotate(-18deg)}.stem.b{right:-28px;top:12px;transform:rotate(14deg)}
+.eyebrow{display:inline-block;background:var(--sage2);padding:.45rem .7rem;font:.82rem/1.1 var(--hand);letter-spacing:.05em;transform:rotate(-1deg);border-bottom:1px solid rgba(63,93,69,.35)}h1,h2,h3{line-height:1.12}h1{font-size:clamp(3rem,6.5vw,5.75rem);margin:.75rem 0 .9rem;font-weight:500;letter-spacing:-.035em}h1 .hello{display:block;font:1.25rem/1.2 var(--hand);letter-spacing:.02em;color:var(--green);margin-bottom:.55rem}h1 .surname{font-family:var(--hand);color:var(--moss);font-weight:500}.lead{font-size:1.15rem;max-width:730px}.scribble-line{display:inline;background:linear-gradient(transparent 69%,rgba(169,184,160,.65) 69% 88%,transparent 88%)}.quote{max-width:670px;margin:1.3rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--green);font:1.02rem/1.55 var(--hand);color:#3d5041}.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.45rem}.btn{display:inline-block;padding:.72rem 1.02rem;text-decoration:none;font-weight:800;background:var(--white);border:1.5px solid var(--moss);box-shadow:4px 4px 0 var(--moss);transition:.16s}.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--moss)}.btn.alt{background:var(--moss);color:#fff}.btn.soft{background:var(--peach)}
+.doodle-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.65rem;margin-top:1.8rem;padding-top:1.2rem;border-top:1px dashed var(--line)}.doodle{text-align:center;min-height:88px;padding:.6rem .3rem;background:rgba(255,253,248,.5);clip-path:polygon(2% 2%,98% 0,100% 95%,96% 100%,2% 98%,0 8%)}.doodle b{display:grid;place-items:center;width:42px;height:42px;margin:auto;border:1.4px solid var(--green);border-radius:50%;font:.72rem var(--hand);transform:rotate(-3deg)}.doodle span{display:block;margin-top:.35rem;font:.78rem var(--hand)}
+section{padding:4.2rem 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1.6rem}.section-head h2{margin:0;font-size:clamp(2rem,4vw,3.2rem);font-weight:500}.section-note{font:1rem/1.3 var(--hand);color:var(--green);transform:rotate(-1deg)}.torn{position:relative;background:rgba(220,228,214,.62);border-top:1px dashed var(--line);border-bottom:1px dashed var(--line)}.torn:before{content:"";position:absolute;top:-8px;left:0;right:0;height:15px;background:linear-gradient(135deg,transparent 8px,var(--paper) 0) 0 0/16px 16px repeat-x;opacity:.65}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.05rem}.card{position:relative;background:var(--paper2);border:1px solid rgba(63,93,69,.2);padding:1.35rem;box-shadow:0 8px 20px rgba(40,52,44,.08);clip-path:polygon(1% 1%,99% 0,100% 96%,97% 100%,2% 99%,0 94%)}.card:nth-child(3n+2){transform:rotate(.4deg)}.card:nth-child(3n){transform:rotate(-.35deg)}.card:before{content:"";position:absolute;top:-7px;left:calc(50% - 33px);width:66px;height:17px;background:rgba(191,173,132,.6);transform:rotate(-3deg)}.tag{font:.72rem/1.1 var(--hand);text-transform:uppercase;letter-spacing:.08em;color:var(--green)}.card h3{margin:.45rem 0 .6rem;font-size:1.3rem}.more{display:inline-block;margin-top:.6rem;font-weight:800;text-decoration-style:wavy;text-underline-offset:4px}.icon{font:1.6rem/1 var(--hand);float:right;color:var(--green);transform:rotate(5deg)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:2rem;align-items:start}.paper-note{background:#f8f2df;border:1px solid rgba(63,93,69,.2);padding:1.5rem;box-shadow:var(--shadow);transform:rotate(-.45deg);clip-path:polygon(1% 0,100% 2%,98% 100%,0 97%)}.paper-note h2{font-family:var(--hand);margin:.25rem 0 1rem}.timeline{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}.time{background:rgba(255,253,248,.8);border:1px dashed var(--green);padding:1rem;min-height:115px}.time:nth-child(even){transform:rotate(.45deg)}.time b{display:block;font-family:var(--hand);color:var(--green);margin-bottom:.25rem}.projects{background:rgba(234,214,199,.48);border-top:1px dashed #c5a18f;border-bottom:1px dashed #c5a18f}.strip{display:flex;gap:.8rem;overflow:auto;padding:.2rem .1rem .8rem}.chip{min-width:210px;background:var(--white);padding:1rem;border:1px solid var(--line);box-shadow:3px 3px 0 rgba(63,93,69,.25);font-family:var(--hand)}
+.contact{background:var(--moss);color:#f8f5e9;position:relative;overflow:hidden}.contact:after{content:"folha • mar • escola • ciência";position:absolute;right:2rem;bottom:1rem;font:1.5rem var(--hand);color:rgba(255,255,255,.12);transform:rotate(-4deg)}.contact a{color:#fff}.contact-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:2rem}.contact-box{border:1px dashed rgba(255,255,255,.55);padding:1.2rem;background:rgba(255,255,255,.04)}footer{padding:1.5rem 1rem;text-align:center;background:#223329;color:#e9eadf;font-size:.84rem}footer a{color:#fff}
+@media(max-width:980px){.hero-grid{grid-template-columns:1fr}.hero-copy{order:-1}.portrait-zone{max-width:380px}.margin-note{display:none}.grid{grid-template-columns:1fr 1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column;padding:.75rem 0}.menu{justify-content:flex-start}}
+@media(max-width:640px){h1{font-size:3.1rem}.hero{padding-top:3.2rem}.hero:after{display:none}.grid,.timeline,.doodle-row{grid-template-columns:1fr}.menu{gap:.55rem}.menu a{font-size:.74rem}.stem{display:none}.section-head{align-items:start;flex-direction:column}.portrait-zone{max-width:330px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"BioRascunho","url":"https://marcelaogioniifes-ops.github.io/","inLanguage":"pt-BR","description":"Materiais didáticos, Ciências, Biologia, BNCC, ENEM e divulgação científica."},{"@type":"Person","name":"Marcela Ogioni do Nascimento","url":"https://marcelaogioniifes-ops.github.io/","jobTitle":"Licencianda em Ciências Biológicas e produtora de materiais didáticos","sameAs":["https://lattes.cnpq.br/7506620486232467","https://www.instagram.com/explicadabiologia/"]}]}
-</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"BioRascunho","url":"https://marcelaogioniifes-ops.github.io/","inLanguage":"pt-BR"},{"@type":"Person","name":"Marcela Ogioni do Nascimento","url":"https://marcelaogioniifes-ops.github.io/","jobTitle":"Licencianda em Ciências Biológicas e produtora de materiais didáticos","sameAs":["https://lattes.cnpq.br/7506620486232467","https://www.instagram.com/explicadabiologia/"]}]}</script>
 </head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#inicio"><strong>BioRascunho ✎</strong><small>ensino · ciência · natureza</small></a>
-    <nav aria-label="Principal"><ul>
-      <li><a href="/atividades/">Atividades</a></li><li><a href="/enem-biologia/">ENEM</a></li><li><a href="/bncc-ciencias/">BNCC</a></li>
-      <li><a href="/atividades-adaptadas/">Adaptadas</a></li><li><a href="/fake-news/">Fake news</a></li>
-      <li><a href="/leituras/">Leituras</a></li><li><a href="/catalogo/">Catálogo</a></li><li><a href="#sobre">Sobre</a></li>
-    </ul></nav>
-  </div>
-</header>
+<header><div class="wrap nav"><a class="brand" href="#inicio"><span class="brandmark">❧</span><span class="brandtext"><strong>Marcela Ogioni</strong><small>biologia • educação • ciência</small></span></a><nav aria-label="Principal"><ul class="menu"><li><a href="#inicio">Início</a></li><li><a href="#sobre">Sobre mim</a></li><li><a href="#formacao">Formação</a></li><li><a href="#experiencias">Experiências</a></li><li><a href="#projetos">Projetos</a></li><li><a href="#materiais">Materiais</a></li><li><a href="#publicacoes">Publicações</a></li><li><a href="#contato">Contato</a></li></ul></nav></div></header>
 <main id="conteudo">
-<section class="hero" id="inicio">
-  <div class="wrap hero-grid">
-    <div class="portrait-zone" aria-label="Retrato de Marcela em composição de caderno de campo">
-      <span class="doodle leaf">☘︎</span><span class="doodle arrow">aqui é real ↘</span><span class="doodle coast">≈ o mar também ensina</span>
-      <figure class="portrait-paper">
-        <img src="/assets/marcela-retrato-foto.jpg" alt="Fotografia de Marcela Ogioni, responsável pelo BioRascunho">
-        <figcaption class="portrait-caption">Marcela Ogioni do Nascimento</figcaption>
-      </figure>
-    </div>
-    <div class="hero-copy">
-      <span class="kicker">Biologia • Educação • Divulgação científica</span>
-      <h1><span class="underline">Biologia</span> <span class="hand">em processo.</span></h1>
-      <p class="lead">Sou Marcela, graduanda em Ciências Biológicas — Licenciatura pela UFES. O BioRascunho reúne materiais didáticos, atividades, pesquisa, educação ambiental e comunicação científica em linguagem acessível.</p>
-      <p class="quote">“Ciência também é sobre pessoas — e aprender pode ter cara de caderno usado, pergunta rabiscada e curiosidade de verdade.”</p>
-      <div class="actions"><a class="btn alt" href="/atividades/">Ver materiais →</a><a class="btn soft" href="/leituras/">Ler ciência explicada</a><a class="btn" href="https://lattes.cnpq.br/7506620486232467" rel="noopener">Currículo Lattes ↗</a></div>
-      <div class="manifesto" aria-label="Áreas do BioRascunho">
-        <div><span class="mark">AULA</span><b>Ensino</b><small>educação que transforma</small></div>
-        <div><span class="mark">LIT</span><b>Pesquisa</b><small>evidência que conecta</small></div>
-        <div><span class="mark">SCI</span><b>Divulgação</b><small>ciência para todos</small></div>
-        <div><span class="mark">ECO</span><b>Natureza</b><small>praias, biodiversidade e cuidado</small></div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="hero" id="inicio"><div class="wrap hero-grid">
+  <div class="portrait-zone"><span class="stem a">⌇</span><span class="stem b">❧</span><span class="margin-note one">ciência também é sobre pessoas ↘</span><span class="margin-note two">aqui tem biologia de verdade ✎</span><figure class="portrait-card"><img src="/assets/marcela-retrato-rascunho.jpg" alt="Retrato em estilo de rascunho de Marcela Ogioni"><figcaption>Marcela Ogioni do Nascimento</figcaption></figure></div>
+  <div class="hero-copy"><span class="eyebrow">bem-vindo(a) ao meu caderno de campo ♡</span><h1><span class="hello">Olá! eu sou</span>Marcela <span class="surname">Ogioni.</span></h1><p class="lead">Graduanda em <strong>Ciências Biológicas — Licenciatura pela UFES</strong>, educadora em formação e apaixonada por transformar ciência em conhecimento <span class="scribble-line">acessível, visual e significativo</span>.</p><p class="quote">“Observar também é uma forma de cuidar. Ensinar também é uma forma de conservar.”</p><div class="actions"><a class="btn alt" href="#materiais">Ver materiais →</a><a class="btn soft" href="#sobre">Conhecer minha trajetória</a><a class="btn" href="https://lattes.cnpq.br/7506620486232467" rel="noopener">Currículo Lattes ↗</a></div><div class="doodle-row" aria-label="Áreas de atuação"><div class="doodle"><b>BIO</b><span>Biologia</span></div><div class="doodle"><b>AULA</b><span>Educação</span></div><div class="doodle"><b>ECO</b><span>Conservação</span></div><div class="doodle"><b>A11Y</b><span>Inclusão</span></div></div></div>
+</div></section>
 
-<section>
-  <div class="wrap">
-    <div class="section-head"><h2>Encontre o que você precisa</h2><span class="scribble">anotações do laboratório para a sala ↗</span></div>
-    <div class="grid-6">
-      <article class="card portal-card"><span class="badge">PDF</span><span class="tag">Atividades</span><h3>Ciências e Biologia para imprimir</h3><p>Atividades prontas e personalizadas, com opção de gabarito e adaptação por série.</p><a class="more" href="/atividades/">Abrir atividades →</a></article>
-      <article class="card portal-card"><span class="badge">DNA</span><span class="tag">ENEM</span><h3>Biologia ENEM</h3><p>Citologia, Genética, Evolução, Ecologia, Fisiologia e leitura de dados sem decorar por decorar.</p><a class="more" href="/enem-biologia/">Revisar Biologia →</a></article>
-      <article class="card portal-card"><span class="badge">BNCC</span><span class="tag">Currículo</span><h3>BNCC Ciências</h3><p>Materiais organizados por ano, habilidade e objetivo de aprendizagem.</p><a class="more" href="/bncc-ciencias/">Explorar BNCC →</a></article>
-      <article class="card portal-card"><span class="badge">A11Y</span><span class="tag">Inclusão</span><h3>Atividades adaptadas</h3><p>Apoio visual, fonte ampliada, menor carga textual e diferentes formas de resposta.</p><a class="more" href="/atividades-adaptadas/">Ver adaptações →</a></article>
-      <article class="card portal-card"><span class="badge">LIT</span><span class="tag">Leitura científica</span><h3>Artigos explicados</h3><p>Pergunta, método, achados e limites traduzidos para português claro, com referência.</p><a class="more" href="/leituras/">Abrir leituras →</a></article>
-      <article class="card portal-card"><span class="badge">?</span><span class="tag">Checagem</span><h3>Desmentindo fake news</h3><p>Boatos de Biologia, saúde e ciência analisados com evidências e contexto.</p><a class="more" href="/fake-news/">Checar fake news →</a></article>
-    </div>
-  </div>
-</section>
+<section class="torn" id="sobre"><div class="wrap about-grid"><div class="paper-note"><span class="tag">sobre mim</span><h2>Ciência em processo.</h2><p>Minha formação conecta ensino de Ciências e Biologia, produção de materiais didáticos, educação inclusiva, educação ambiental, comunicação científica e pesquisa em ecologia costeira.</p><p class="quote">Curiosidade também é uma forma de cuidado com o mundo.</p></div><div><div class="section-head"><h2>O que move este espaço</h2><span class="section-note">anotações que viram aula ↗</span></div><div class="grid"><article class="card"><span class="icon">✎</span><span class="tag">Ensino</span><h3>Ciência que faz sentido</h3><p>Materiais claros, atividades investigativas e explicações pensadas para a sala de aula real.</p></article><article class="card"><span class="icon">⌁</span><span class="tag">Pesquisa</span><h3>Do artigo para a conversa</h3><p>Leitura crítica, síntese de evidências e divulgação científica em linguagem acessível.</p></article><article class="card"><span class="icon">❧</span><span class="tag">Natureza</span><h3>Ecologia e conservação</h3><p>Praias, biodiversidade, impactos humanos e educação ambiental também fazem parte do caderno.</p></article></div></div></div></section>
 
-<section class="sales-band">
-  <div class="wrap">
-    <div class="section-head"><h2>Materiais que saem do rascunho</h2><span class="scribble">BNCC • inclusão • sala de aula</span></div>
-    <div class="grid">
-      <article class="card"><span class="tag">Fundamental</span><h3>Ciências do 1º ao 9º ano</h3><p>Associação, esquemas, revisão, investigação, recortar e colar e versões com gabarito.</p></article>
-      <article class="card"><span class="tag">Ensino Médio</span><h3>Biologia e avaliações</h3><p>Citologia, Genética, Evolução, Ecologia, Fisiologia, Biotecnologia e preparação para o ENEM.</p></article>
-      <article class="card"><span class="tag">Inclusão</span><h3>Adaptação sem esvaziar o conteúdo</h3><p>Menor carga textual, apoio visual e diferentes caminhos para demonstrar aprendizagem.</p></article>
-    </div>
-    <div class="actions"><a class="btn alt" href="/atividades/">Escolher série e material →</a></div>
-  </div>
-</section>
+<section id="formacao"><div class="wrap"><div class="section-head"><h2>Formação</h2><span class="section-note">entre escola, universidade e campo</span></div><div class="grid"><article class="card"><span class="tag">UFES • Campus Alegre</span><h3>Ciências Biológicas — Licenciatura</h3><p>Graduação com conclusão prevista para 2027/1, voltada à docência em Ciências e Biologia.</p></article><article class="card"><span class="tag">IFES • Campus Piúma</span><h3>Técnico em Pesca</h3><p>Formação técnica integrada ao Ensino Médio, com base em recursos pesqueiros e ambiente costeiro.</p></article><article class="card"><span class="tag">Formação continuada</span><h3>Educação, design e conteúdo</h3><p>Estudo contínuo de inclusão, recursos digitais, produção didática, design educacional e comunicação científica.</p></article></div></div></section>
 
-<section class="band">
-  <div class="wrap">
-    <div class="section-head"><h2>Destaques do acervo</h2><span class="scribble">do quadro ao digital</span></div>
-    <div class="grid">
-      <article class="card"><span class="tag">Terra e Universo</span><h3>9º ano: teoria + atividades</h3><p>Sistema Solar, Astronomia, habitabilidade e evolução estelar em trilha didática.</p><a class="more" href="/terra-e-universo/">Abrir trilha →</a></article>
-      <article class="card"><span class="tag">Genética</span><h3>DNA, mutações e hereditariedade</h3><p>Recursos sobre DNA, agentes mutagênicos, Mendel e quadro de Punnett.</p><a class="more" href="/catalogo/">Ver catálogo →</a></article>
-      <article class="card"><span class="tag">EJA & Campo</span><h3>Ciência contextualizada</h3><p>Saúde, ambiente, saneamento, solo, água, agroecologia, biodiversidade e conservação.</p><a class="more" href="/catalogo/">Ver catálogo →</a></article>
-      <article class="card"><span class="tag">Avaliação</span><h3>Itens e revisão de erros</h3><p>Questões de Ciências/Biologia organizadas para avaliar raciocínio, evidência e interpretação.</p><a class="more" href="/questoes-ifes/">Banco de questões →</a></article>
-      <article class="card"><span class="tag">Acessibilidade</span><h3>Princípios de adaptação</h3><p>Clareza, apoio visual, etapas e alternativas de resposta mantendo o objetivo conceitual.</p><a class="more" href="/atividades-adaptadas/">Ver princípios →</a></article>
-      <article class="card"><span class="tag">Ecologia costeira</span><h3>Microplásticos e praias arenosas</h3><p>Leitura comentada de evidências sobre microplásticos e caranguejo-fantasma.</p><a class="more" href="/leituras/caranguejo-fantasma-microplasticos.html">Ler explicação →</a></article>
-    </div>
-  </div>
-</section>
+<section class="projects" id="experiencias"><div class="wrap"><div class="section-head"><h2>Experiências</h2><span class="section-note">aprendendo enquanto ensino</span></div><div class="timeline"><div class="time"><b>2024–2026 • PIBID</b>PIBID Interdisciplinar Química e Ciências Biológicas: planejamento, regência, avaliação e produção de materiais.</div><div class="time"><b>UFES • Monitoria</b>Monitoria voluntária de Biologia Celular, com apoio ao aprendizado e revisão de conteúdos.</div><div class="time"><b>Estágio supervisionado</b>Vivências em Ciências e Biologia no CEEFMTI Aristeu Aguiar, acompanhando turmas e regências.</div><div class="time"><b>LABEPRAIAS / GPEMAP</b>Revisão bibliográfica e síntese de evidências ligadas à ecologia e à gestão de praias arenosas.</div></div></div></section>
 
-<section id="publicacoes">
-  <div class="wrap">
-    <div class="section-head"><h2>Ensino também produz conhecimento</h2><span class="scribble">pesquisa • prática • comunicação</span></div>
-    <p class="note">Minha trajetória conecta iniciação à docência, produção de materiais, pesquisa bibliográfica e divulgação científica. Os metadados acadêmicos completos permanecem no Currículo Lattes.</p>
-    <div class="grid">
-      <article class="card"><span class="tag">PIBID</span><h3>Ensino de Ciências na escola pública</h3><p>Planejamento, regência, avaliação e materiais didáticos no PIBID Interdisciplinar Química e Ciências Biológicas.</p></article>
-      <article class="card"><span class="tag">LABEPRAIAS / GPEMAP</span><h3>Ecologia costeira</h3><p>Revisão de literatura e síntese de evidências sobre gestão de praias arenosas.</p></article>
-      <article class="card"><span class="tag">Eventos</span><h3>Produção acadêmica e extensão</h3><p>Trabalhos sobre ensino de Ciências, educação étnico-racial, saberes tradicionais, memória e justiça ambiental.</p></article>
-    </div>
-  </div>
-</section>
+<section id="projetos"><div class="wrap"><div class="section-head"><h2>Projetos e pesquisas</h2><span class="section-note">ideias rabiscadas → projetos reais</span></div><div class="strip" aria-label="Projetos"><div class="chip">≈ ecologia costeira<br><small>praias arenosas e biodiversidade</small></div><div class="chip">DNA educação científica<br><small>ensino de Ciências e Biologia</small></div><div class="chip">A11Y inclusão<br><small>materiais com diferentes caminhos de aprendizagem</small></div><div class="chip">✦ divulgação científica<br><small>artigos explicados sem perder o rigor</small></div></div></div></section>
 
-<section id="sobre">
-  <div class="wrap about">
-    <div class="about-note">
-      <span class="tag">Sobre mim</span><h2>Marcela Ogioni</h2>
-      <p>Graduanda em Ciências Biológicas — Licenciatura pela UFES, com conclusão prevista para 2027/1. Minha formação passa por ensino de Ciências e Biologia, materiais didáticos, educação inclusiva, educação ambiental e comunicação científica.</p>
-      <p class="quote">Curiosidade também é uma forma de cuidado com o mundo.</p>
-      <div class="actions"><a class="btn alt" href="https://lattes.cnpq.br/7506620486232467" rel="noopener">Ver Lattes ↗</a><a class="btn" href="/direitos-autorais.html">Autoria e direitos</a></div>
-    </div>
-    <div>
-      <div class="section-head"><h2>Destaques</h2><span class="scribble">um pouco da trajetória</span></div>
-      <div class="timeline">
-        <div class="time"><b>2024–2026</b>PIBID Interdisciplinar — Biologia e Química</div>
-        <div class="time"><b>UFES</b>Monitoria voluntária de Biologia Celular</div>
-        <div class="time"><b>2026</b>Estágios supervisionados em Ciências/Biologia</div>
-        <div class="time"><b>Pesquisa</b>Ecologia costeira, revisão bibliográfica e divulgação</div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="torn" id="materiais"><div class="wrap"><div class="section-head"><h2>Materiais didáticos</h2><span class="section-note">do rascunho para a sua aula</span></div><div class="grid"><article class="card"><span class="tag">Ciências & Biologia</span><h3>Atividades para imprimir</h3><p>Atividades, revisões, gabaritos e materiais por série.</p><a class="more" href="/atividades/">Abrir atividades →</a></article><article class="card"><span class="tag">Currículo</span><h3>BNCC Ciências</h3><p>Conteúdos organizados por ano, habilidade e objetivo de aprendizagem.</p><a class="more" href="/bncc-ciencias/">Explorar BNCC →</a></article><article class="card"><span class="tag">ENEM</span><h3>Biologia ENEM</h3><p>Revisão, interpretação de dados e conexões entre os principais temas.</p><a class="more" href="/enem-biologia/">Revisar Biologia →</a></article><article class="card"><span class="tag">Inclusão</span><h3>Atividades adaptadas</h3><p>Apoio visual, menor carga textual, fonte ampliada e diferentes formas de resposta.</p><a class="more" href="/atividades-adaptadas/">Ver adaptações →</a></article><article class="card"><span class="tag">Leitura científica</span><h3>Artigos explicados</h3><p>Pergunta, método, resultados, limites e referência em português claro.</p><a class="more" href="/leituras/">Abrir leituras →</a></article><article class="card"><span class="tag">Checagem</span><h3>Ciência contra desinformação</h3><p>Boatos e afirmações científicas analisados com evidências e contexto.</p><a class="more" href="/fake-news/">Ver checagens →</a></article></div></div></section>
 
-<section class="money-band">
-  <div class="wrap">
-    <div class="section-head"><h2>Outro projeto editorial</h2><span class="scribble">consumo com transparência</span></div>
-    <div class="grid">
-      <article class="card"><span class="tag">Testei & Anotei</span><h3>Reviews honestos</h3><p>Projeto separado para reviews, comparações e guias de compra com transparência sobre testes e links.</p><a class="more" href="/testei-anotei/">Conhecer projeto →</a></article>
-      <article class="card"><span class="tag">Guia gratuito</span><h3>Como receber produtos para testar</h3><p>Plataformas legítimas, cuidados contra golpes e como produzir avaliações úteis.</p><a class="more" href="/testei-anotei/receber-produtos.html">Abrir guia →</a></article>
-      <article class="card"><span class="tag">Transparência</span><h3>Testado ≠ pesquisado</h3><p>Se não usei, não chamo de review. Produto recebido e link com comissão são identificados.</p></article>
-    </div>
-  </div>
-</section>
+<section id="publicacoes"><div class="wrap"><div class="section-head"><h2>Produções e publicações</h2><span class="section-note">ensino também produz conhecimento</span></div><div class="grid"><article class="card"><span class="tag">PIBID</span><h3>Práticas de ensino</h3><p>Relatos, estratégias didáticas e materiais construídos a partir da escola pública.</p></article><article class="card"><span class="tag">Eventos</span><h3>Trabalhos acadêmicos</h3><p>Produções ligadas a ensino de Ciências, educação, extensão e temas socioambientais.</p></article><article class="card"><span class="tag">Ecologia costeira</span><h3>Leitura e síntese científica</h3><p>Pesquisa bibliográfica, comunicação de evidências e divulgação de temas costeiros.</p><a class="more" href="/leituras/caranguejo-fantasma-microplasticos.html">Ler uma explicação →</a></article></div></div></section>
 
-<section class="contact" id="contato">
-  <div class="wrap contact-grid">
-    <div><h2>Quer conversar sobre ciência, educação ou conteúdo?</h2><p>O BioRascunho é meu portfólio profissional e também uma vitrine de materiais de Ciências/Biologia. Pedidos personalizados e propostas profissionais podem ser enviados por e-mail.</p></div>
-    <div class="contact-box">
-      <p><strong>E-mail</strong><br><a href="mailto:marcelaogioni.ifes@gmail.com">marcelaogioni.ifes@gmail.com</a></p>
-      <p><strong>Instagram científico</strong><br><a href="https://www.instagram.com/explicadabiologia/" rel="noopener">@explicadabiologia ↗</a></p>
-      <p><strong>Currículo Lattes</strong><br><a href="https://lattes.cnpq.br/7506620486232467" rel="noopener">Abrir currículo ↗</a></p>
-    </div>
-  </div>
-</section>
+<section class="contact" id="contato"><div class="wrap contact-grid"><div><span class="tag" style="color:#dce4d6">contato</span><h2>Vamos conversar sobre ciência, educação ou conteúdo?</h2><p>Este site é meu portfólio acadêmico e um espaço para compartilhar materiais e projetos. Para propostas profissionais, colaborações ou dúvidas, fale comigo.</p></div><div class="contact-box"><p><strong>E-mail</strong><br><a href="mailto:marcelaogioni.ifes@gmail.com">marcelaogioni.ifes@gmail.com</a></p><p><strong>Instagram científico</strong><br><a href="https://www.instagram.com/explicadabiologia/" rel="noopener">@explicadabiologia ↗</a></p><p><strong>Currículo Lattes</strong><br><a href="https://lattes.cnpq.br/7506620486232467" rel="noopener">Abrir currículo ↗</a></p></div></div></section>
 </main>
-<footer>© 2026 BioRascunho • Marcela Ogioni do Nascimento • conteúdo autoral e referências identificadas • <a href="/direitos-autorais.html">autoria e direitos</a></footer>
+<footer>© 2026 Marcela Ogioni do Nascimento • BioRascunho • <a href="/direitos-autorais.html">autoria e direitos</a> • conhecimento que se compartilha cresce.</footer>
 </body>
 </html>
