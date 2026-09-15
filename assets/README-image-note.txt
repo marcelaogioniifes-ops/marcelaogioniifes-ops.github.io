@@ -1,1 +1,0 @@
-Binary portrait is stored in assets/marcela-biorascunho-alta.png and referenced by the homepage.
