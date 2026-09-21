@@ -1,0 +1,10 @@
+{
+  "name": "BioRascunho | Marcela Ogioni",
+  "short_name": "BioRascunho",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f1efdf",
+  "theme_color": "#eef0df",
+  "lang": "pt-BR",
+  "description": "Portfólio de Biologia, educação e divulgação científica de Marcela Ogioni."
+}
