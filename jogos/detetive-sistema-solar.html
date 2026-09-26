@@ -2,14 +2,42 @@
 <section class="hero"><div class="wrap"><span class="ey">astronomia • classificação</span><h1>Detetive do Sistema Solar</h1><p class="lead">Cometa, asteroide, meteoroide, meteoro e meteorito não são nomes diferentes para a mesma coisa. Use as pistas para descobrir de quem estamos falando.</p></div></section>
 <section><div class="wrap"><div class="game"><div id="astage"></div><div id="afb" class="feedback"></div><button id="anext" class="btn alt" style="display:none">Próxima pista</button></div><p class="small">Objetivo pedagógico: diferenciar corpos menores do Sistema Solar e o nome dado ao fenômeno quando um fragmento entra na atmosfera.</p></div></section>
 <script>
-const aa=[
-["Sou um corpo rico em gelo e poeira. Quando me aproximo do Sol, posso formar coma e cauda.","Cometa","Cometas contêm materiais voláteis. O aquecimento próximo ao Sol libera gás e poeira, formando coma e caudas."],
-["Sou um pequeno fragmento rochoso ou metálico viajando pelo espaço, menor que muitos asteroides.","Meteoroide","Meteoroide é o corpo no espaço. O nome muda quando ele entra na atmosfera."],
-["Você me vê como um risco luminoso no céu quando um meteoroide atravessa a atmosfera.","Meteoro","Meteoro é o fenômeno luminoso, não a pedra guardada em um museu."],
-["Sou a parte que sobrevive à passagem pela atmosfera e chega ao solo.","Meteorito","Quando o material alcança a superfície, passa a ser chamado de meteorito."],
-["Muitos de nós orbitam o Sol entre Marte e Júpiter, no cinturão principal.","Asteroide","Asteroides são corpos predominantemente rochosos ou metálicos; muitos estão no cinturão principal."]
-];let ai=0,ap=0;const opts=["Cometa","Asteroide","Meteoroide","Meteoro","Meteorito"];
-function arender(){if(ai>=aa.length){document.getElementById("astage").innerHTML="<h2>Caso encerrado</h2><p>Você identificou <strong>"+ap+" de "+aa.length+"</strong>. O segredo é prestar atenção em duas coisas: <em>onde</em> o objeto está e <em>o que está acontecendo com ele</em>.</p>";return;}document.getElementById("astage").innerHTML="<h2>Pista "+(ai+1)+"</h2><p>"+aa[ai][0]+"</p>"+opts.map(o=>'<button class="choice" onclick="apick(\''+o+'\')">'+o+'</button>').join("");}
-function apick(v){const ok=v===aa[ai][1];if(ok)ap++;document.querySelectorAll(".choice").forEach(b=>b.disabled=true);const f=document.getElementById("afb");f.style.display="block";f.innerHTML="<strong>"+(ok?"Acertou.":"A resposta era "+aa[ai][1]+".")+"</strong> "+aa[ai][2];document.getElementById("anext").style.display="inline-block";}
-document.getElementById("anext").onclick=()=>{ai++;document.getElementById("afb").style.display="none";document.getElementById("anext").style.display="none";arender();};arender();
-</script></main><footer>© 2026 BioRascunho • Marcela Ogioni do Nascimento</footer></body></html>
+(function(){
+ const items=[
+  {text:"Sou um corpo rico em gelo e poeira. Quando me aproximo do Sol, posso formar coma e cauda.",answer:"Cometa",fb:"Cometas contêm materiais voláteis. O aquecimento próximo ao Sol libera gás e poeira, formando coma e caudas."},
+  {text:"Sou um pequeno fragmento rochoso ou metálico viajando pelo espaço.",answer:"Meteoroide",fb:"Meteoroide é o corpo no espaço. O nome muda quando ele entra na atmosfera."},
+  {text:"Você me vê como um risco luminoso no céu quando um meteoroide atravessa a atmosfera.",answer:"Meteoro",fb:"Meteoro é o fenômeno luminoso observado na atmosfera."},
+  {text:"Sou a parte que sobrevive à passagem pela atmosfera e chega ao solo.",answer:"Meteorito",fb:"Quando o material alcança a superfície, passa a ser chamado de meteorito."},
+  {text:"Muitos de nós orbitam o Sol entre Marte e Júpiter, no cinturão principal.",answer:"Asteroide",fb:"Asteroides são corpos predominantemente rochosos ou metálicos; muitos estão no cinturão principal."}
+ ];
+ const opts=["Cometa","Asteroide","Meteoroide","Meteoro","Meteorito"];
+ let i=0,pts=0;
+ const stage=document.getElementById("astage"), fb=document.getElementById("afb"), next=document.getElementById("anext");
+ function render(){
+   if(i>=items.length){
+    stage.innerHTML="<h2>Caso encerrado</h2><p>Você identificou <strong>"+pts+" de "+items.length+"</strong>. Para diferenciar os termos, observe onde o objeto está e o que está acontecendo com ele.</p><button type='button' class='btn' id='arestart'>Jogar de novo</button>";
+    fb.style.display="none"; next.style.display="none";
+    document.getElementById("arestart").addEventListener("click",function(){i=0;pts=0;render();});
+    return;
+   }
+   stage.innerHTML="";
+   const h=document.createElement("h2"); h.textContent="Pista "+(i+1)+" de "+items.length;
+   const p=document.createElement("p"); p.textContent=items[i].text;
+   stage.append(h,p);
+   opts.forEach(function(o){
+     const b=document.createElement("button"); b.type="button"; b.className="choice"; b.textContent=o;
+     b.addEventListener("click",function(){pick(o);});
+     stage.appendChild(b);
+   });
+ }
+ function pick(v){
+   const item=items[i],ok=v===item.answer;
+   if(ok)pts++;
+   stage.querySelectorAll("button").forEach(function(b){b.disabled=true;});
+   fb.style.display="block";
+   fb.innerHTML="<strong>"+(ok?"Acertou. ":"A resposta era "+item.answer+". ")+"</strong>"+item.fb;
+   next.style.display="inline-block";
+ }
+ next.addEventListener("click",function(){i++;fb.style.display="none";next.style.display="none";render();});
+ render();
+})();</script></main><footer>© 2026 BioRascunho • Marcela Ogioni do Nascimento</footer></body></html>
