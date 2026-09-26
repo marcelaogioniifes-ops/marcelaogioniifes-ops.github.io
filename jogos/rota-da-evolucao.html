@@ -2,14 +2,42 @@
 <section class="hero"><div class="wrap"><span class="ey">evolução • seleção natural • raciocínio</span><h1>Rota da evolução</h1><p class="lead">Muitas frases sobre evolução parecem científicas porque usam palavras como “adaptação” e “necessidade”. O desafio aqui é descobrir se a explicação realmente envolve variação herdável e seleção ao longo das gerações.</p></div></section>
 <section><div class="wrap"><div class="game"><div id="evostage"></div><div id="evofb" class="feedback"></div><button id="evonext" class="btn alt" style="display:none">Próxima</button></div><p class="small">Objetivo pedagógico: reconhecer explicações finalistas e compreender o papel da variação, hereditariedade e seleção natural.</p></div></section>
 <script>
-const items=[
-["Em uma população de insetos, alguns já apresentam variações que os tornam menos visíveis aos predadores. Esses indivíduos deixam mais descendentes.","e","A variação aparece antes da seleção. A seleção muda a frequência das características ao longo das gerações."],
-["As girafas ficaram com o pescoço maior porque precisavam alcançar folhas mais altas.","n","Necessidade não produz, por si só, uma característica herdável. A explicação evolutiva precisa considerar variação e reprodução diferencial."],
-["Após várias gerações usando um antibiótico, bactérias resistentes tornam-se mais frequentes porque variantes resistentes sobrevivem e se reproduzem.","e","A resistência não aparece porque a bactéria decide se adaptar; variantes resistentes são favorecidas pela seleção."],
-["Os peixes desenvolveram um corpo mais hidrodinâmico porque nadaram muito durante a vida.","n","Uma mudança adquirida pelo uso durante a vida não explica, sozinha, evolução populacional."],
-["Em um ambiente mais seco, plantas com características herdáveis que reduzem perda de água produzem mais descendentes.","e","Aqui há característica herdável associada a diferença de sucesso reprodutivo: elementos centrais da seleção natural."]
-];let k=0,pts=0;
-function erender(){if(k>=items.length){document.getElementById("evostage").innerHTML="<h2>Fim</h2><p>Você acertou <strong>"+pts+" de "+items.length+"</strong>. Se errou alguma, volte à pergunta principal: a explicação fala de indivíduos mudando porque precisam ou de populações mudando ao longo das gerações?</p>";return;}document.getElementById("evostage").innerHTML="<h2>Frase "+(k+1)+"</h2><p>"+items[k][0]+"</p><button class='choice' onclick="epick('e')">Explicação evolutiva adequada</button><button class='choice' onclick="epick('n')">Tem um problema na explicação</button>";}
-function epick(v){const ok=v===items[k][1];if(ok)pts++;document.querySelectorAll(".choice").forEach(b=>b.disabled=true);const f=document.getElementById("evofb");f.style.display="block";f.innerHTML="<strong>"+(ok?"Isso.":"Quase.")+"</strong> "+items[k][2];document.getElementById("evonext").style.display="inline-block";}
-document.getElementById("evonext").onclick=()=>{k++;document.getElementById("evofb").style.display="none";document.getElementById("evonext").style.display="none";erender();};erender();
-</script></main><footer>© 2026 BioRascunho • Marcela Ogioni do Nascimento</footer></body></html>
+(function(){
+ const items=[
+  {text:"Em uma população de insetos, alguns já apresentam variações que os tornam menos visíveis aos predadores. Esses indivíduos deixam mais descendentes.",answer:"adequada",fb:"A variação aparece antes da seleção. Ao longo das gerações, características herdáveis associadas a maior sucesso reprodutivo podem se tornar mais frequentes."},
+  {text:"As girafas ficaram com o pescoço maior porque precisavam alcançar folhas mais altas.",answer:"problema",fb:"A necessidade do indivíduo não produz, sozinha, uma característica herdável. Uma explicação evolutiva precisa considerar variação entre indivíduos e reprodução diferencial."},
+  {text:"Após várias gerações usando um antibiótico, bactérias resistentes tornam-se mais frequentes porque variantes resistentes sobrevivem e se reproduzem.",answer:"adequada",fb:"A resistência não aparece porque a bactéria decide se adaptar. Variantes resistentes já existentes ou surgidas por mutação podem ser favorecidas pela seleção."},
+  {text:"Os peixes desenvolveram um corpo mais hidrodinâmico porque nadaram muito durante a vida.",answer:"problema",fb:"Uma mudança adquirida pelo uso durante a vida não explica, sozinha, a mudança evolutiva de uma população ao longo das gerações."},
+  {text:"Em um ambiente mais seco, plantas com características herdáveis que reduzem perda de água produzem mais descendentes.",answer:"adequada",fb:"Aqui aparecem dois elementos centrais: uma característica herdável e uma diferença no sucesso reprodutivo."}
+ ];
+ let i=0,pts=0;
+ const stage=document.getElementById("evostage"), fb=document.getElementById("evofb"), next=document.getElementById("evonext");
+
+ function render(){
+   if(i>=items.length){
+     stage.innerHTML="<h2>Fim</h2><p>Você acertou <strong>"+pts+" de "+items.length+"</strong>. A pergunta principal continua sendo: a explicação fala de um indivíduo mudando porque precisa ou de uma população mudando ao longo das gerações?</p><button type='button' class='btn' id='evorestart'>Jogar de novo</button>";
+     fb.style.display="none"; next.style.display="none";
+     document.getElementById("evorestart").addEventListener("click",function(){i=0;pts=0;render();});
+     return;
+   }
+   const item=items[i];
+   stage.innerHTML="";
+   const h=document.createElement("h2"); h.textContent="Frase "+(i+1)+" de "+items.length;
+   const p=document.createElement("p"); p.textContent=item.text;
+   const a=document.createElement("button"); a.type="button"; a.className="choice"; a.textContent="Explicação evolutiva adequada";
+   const b=document.createElement("button"); b.type="button"; b.className="choice"; b.textContent="Tem um problema na explicação";
+   a.addEventListener("click",function(){pick("adequada");});
+   b.addEventListener("click",function(){pick("problema");});
+   stage.append(h,p,a,b);
+ }
+ function pick(v){
+   const item=items[i], ok=v===item.answer;
+   if(ok) pts++;
+   stage.querySelectorAll("button").forEach(function(b){b.disabled=true;});
+   fb.style.display="block";
+   fb.innerHTML="<strong>"+(ok?"Isso. ":"Quase. ")+"</strong>"+item.fb;
+   next.style.display="inline-block";
+ }
+ next.addEventListener("click",function(){i++;fb.style.display="none";next.style.display="none";render();});
+ render();
+})();</script></main><footer>© 2026 BioRascunho • Marcela Ogioni do Nascimento</footer></body></html>
