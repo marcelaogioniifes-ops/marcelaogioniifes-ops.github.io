@@ -1,0 +1,4 @@
+const q=s=>document.querySelector(s);const input=q('#url'),go=q('#go'),status=q('#status'),result=q('#result'),name=q('#name'),download=q('#download');
+function show(m,t='ok'){status.textContent=m;status.className='status '+t}
+function fname(u){try{const p=new URL(u).pathname.split('/').filter(Boolean).pop()||'video';return decodeURIComponent(p)}catch{return 'video'}}
+go.addEventListener('click',()=>{const u=input.value.trim();result.classList.add('hidden');if(!u){show('Cole um link direto para um arquivo de vídeo.','err');return}try{const x=new URL(u);if(!/^https?:$/.test(x.protocol))throw 0;const n=fname(u);name.textContent=n;download.href=u;download.setAttribute('download',n);result.classList.remove('hidden');show('Link preparado. Clique em “Baixar vídeo”.','ok')}catch{show('Esse endereço não parece ser um link http/https válido.','err')}});input.addEventListener('keydown',e=>{if(e.key==='Enter')go.click()});
