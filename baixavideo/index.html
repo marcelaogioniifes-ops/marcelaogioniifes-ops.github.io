@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BaixaVídeo — download por link direto</title>
+  <meta name="description" content="Baixe vídeos por link direto de arquivos públicos ou autorizados.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <header class="nav">
+    <div class="brand"><span class="logo">↓</span><span>BaixaVídeo</span></div>
+    <span class="badge">link direto</span>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">SIMPLES • RÁPIDO • SEM CADASTRO</p>
+      <h1>Baixe seu vídeo<br><span>colando o link.</span></h1>
+      <p class="sub">Para arquivos de vídeo públicos ou seus próprios arquivos. Use somente conteúdo que você tenha permissão para baixar.</p>
+      <div class="card">
+        <label for="url">Link direto do vídeo</label>
+        <div class="row">
+          <input id="url" type="url" placeholder="https://exemplo.com/video.mp4">
+          <button id="go">Preparar download</button>
+        </div>
+        <div id="status" class="status hidden"></div>
+        <div id="result" class="result hidden">
+          <div class="fileicon">▶</div>
+          <div class="meta"><strong id="name">video.mp4</strong><span>Link pronto</span></div>
+          <a id="download" class="download" href="#" target="_blank" rel="noopener">Baixar</a>
+        </div>
+      </div>
+      <div class="notes">
+        <div><b>✓</b> MP4, WebM, MOV e links diretos semelhantes</div>
+        <div><b>✓</b> Funciona direto no navegador</div>
+        <div><b>!</b> Não remove DRM, login ou proteção de plataformas</div>
+      </div>
+    </section>
+  </main>
+  <footer>Use apenas conteúdo próprio, público ou autorizado.</footer>
+  <script src="./app.js"></script>
+</body>
+</html>
