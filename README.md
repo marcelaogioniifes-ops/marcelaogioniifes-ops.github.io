@@ -13,6 +13,8 @@ Sou graduanda em **Ciências Biológicas — Licenciatura na UFES**. O BioRascun
 - [Projetos](https://marcelaogioniifes-ops.github.io/projetos/)
 - [Materiais autorais](https://marcelaogioniifes-ops.github.io/materiais-autorais/)
 - [Biologia no ENEM](https://marcelaogioniifes-ops.github.io/enem-biologia/)
+- [Questões autorais de Biologia](https://marcelaogioniifes-ops.github.io/enem-biologia/questoes-autorais.html)
+- [Portfólio de elaboração de itens](https://marcelaogioniifes-ops.github.io/enem-biologia/portfolio-avaliacao-educacional.html)
 - [Leituras científicas](https://marcelaogioniifes-ops.github.io/leituras/)
 - [Currículo](https://marcelaogioniifes-ops.github.io/curriculo/)
 
