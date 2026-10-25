@@ -22,6 +22,5 @@ Sou graduanda em **Ciências Biológicas — Licenciatura na UFES**. O BioRascun
 - [Projetos acadêmicos e de extensão](https://marcelaogioniifes-ops.github.io/projetos/)
 - [Sobre e experiências](https://marcelaogioniifes-ops.github.io/sobre/)
 
-> O GitHub é usado apenas para hospedar e versionar o site. Para conhecer meu trabalho, acesse o BioRascunho pelo endereço acima.
 
 Contato profissional: **marcelaogioni.ifes@gmail.com**
