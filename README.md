@@ -13,6 +13,8 @@ Sou graduanda em **Ciências Biológicas — Licenciatura na UFES**. O BioRascun
 - [Projetos](https://marcelaogioniifes-ops.github.io/projetos/)
 - [Design instrucional — amostras](https://marcelaogioniifes-ops.github.io/design-instrucional/)
 - [Minicurso de Biologia](https://marcelaogioniifes-ops.github.io/design-instrucional/minicurso-biodiversidade.html)
+- [Guia H5P do zero](https://marcelaogioniifes-ops.github.io/design-instrucional/h5p-do-zero.html)
+- [Atividade interativa de cadeia alimentar](https://marcelaogioniifes-ops.github.io/design-instrucional/atividade-interativa-cadeia-alimentar.html)
 - [Storyboard H5P](https://marcelaogioniifes-ops.github.io/design-instrucional/storyboard-h5p.html)
 - [Plano de curso Moodle](https://marcelaogioniifes-ops.github.io/design-instrucional/plano-moodle.html)
 - [Materiais autorais](https://marcelaogioniifes-ops.github.io/materiais-autorais/)
