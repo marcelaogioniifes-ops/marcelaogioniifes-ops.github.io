@@ -7,18 +7,17 @@ Este repositório hospeda o **site público do meu portfólio profissional e aca
 Sou graduanda em **Ciências Biológicas — Licenciatura na UFES**. O BioRascunho reúne trabalhos de ensino de Ciências e Biologia, materiais didáticos, projetos de Educação Ambiental e ERER, avaliação educacional, elaboração freelancer de questões de Biologia (BioATP), produção de conteúdo didático (Kultivi), divulgação científica (Café com Ciência/PROEX-UFES) e leituras em ecologia costeira (LABEPRAIAS/GPEMAP).
 
 ## Portfólio organizado por função
-A página inicial reúne abas para avaliação e elaboração de questões, conteúdo didático, design instrucional, storytelling e roteiros, pesquisa/divulgação científica e acessibilidade. O currículo e as experiências profissionais ficam em páginas próprias.
+A página inicial apresenta o foco profissional: elaboração e revisão de questões de Biologia, atividades, sequências didáticas e materiais de Ciências/Biologia. Amostras acadêmicas e recursos digitais são apresentados separadamente das experiências profissionais.
 
 ## Onde navegar
 
 - [Página inicial](https://marcelaogioniifes-ops.github.io/)
 - [Sobre Marcela](https://marcelaogioniifes-ops.github.io/sobre/)
 - [Projetos](https://marcelaogioniifes-ops.github.io/projetos/)
-- [Design instrucional — amostras](https://marcelaogioniifes-ops.github.io/design-instrucional/)
+- [Materiais didáticos e recursos digitais — amostras](https://marcelaogioniifes-ops.github.io/design-instrucional/)
 - [Minicurso de Biologia](https://marcelaogioniifes-ops.github.io/design-instrucional/minicurso-biodiversidade.html)
 - [Storytelling científico — Entre a areia e o mar](https://marcelaogioniifes-ops.github.io/design-instrucional/entre-a-areia-e-o-mar.html)
 - [Caderno de atividades — Dossiê de campo da restinga](https://marcelaogioniifes-ops.github.io/design-instrucional/dossie-de-campo-restinga.html)
-- [Guia H5P do zero](https://marcelaogioniifes-ops.github.io/design-instrucional/h5p-do-zero.html)
 - [Atividade interativa de cadeia alimentar](https://marcelaogioniifes-ops.github.io/design-instrucional/atividade-interativa-cadeia-alimentar.html)
 - [Storyboard H5P](https://marcelaogioniifes-ops.github.io/design-instrucional/storyboard-h5p.html)
 - [Plano de curso Moodle](https://marcelaogioniifes-ops.github.io/design-instrucional/plano-moodle.html)
