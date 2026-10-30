@@ -6,6 +6,9 @@ Este repositório hospeda o **site público do meu portfólio profissional e aca
 
 Sou graduanda em **Ciências Biológicas — Licenciatura na UFES**. O BioRascunho reúne trabalhos de ensino de Ciências e Biologia, materiais didáticos, projetos de Educação Ambiental e ERER, avaliação educacional, elaboração freelancer de questões de Biologia (BioATP), produção de conteúdo didático (Kultivi), divulgação científica (Café com Ciência/PROEX-UFES) e leituras em ecologia costeira (LABEPRAIAS/GPEMAP).
 
+## Portfólio organizado por função
+A página inicial reúne abas para avaliação e elaboração de questões, conteúdo didático, design instrucional, storytelling e roteiros, pesquisa/divulgação científica e acessibilidade. O currículo e as experiências profissionais ficam em páginas próprias.
+
 ## Onde navegar
 
 - [Página inicial](https://marcelaogioniifes-ops.github.io/)
