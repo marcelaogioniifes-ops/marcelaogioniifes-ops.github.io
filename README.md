@@ -24,6 +24,7 @@ Meu portfólio reúne amostras autorais e experiências acadêmicas. Os trabalho
 - [Questões autorais de Biologia](https://marcelaogioniifes-ops.github.io/enem-biologia/questoes-autorais.html)
 - [Portfólio de avaliação educacional](https://marcelaogioniifes-ops.github.io/enem-biologia/portfolio-avaliacao-educacional.html)
 - [Banco de questões comentadas](https://marcelaogioniifes-ops.github.io/enem-biologia/banco-de-questoes.html)
+- [Programa completo de Biologia para o ENEM — Matriz de Referência 2026](https://marcelaogioniifes-ops.github.io/enem-biologia/programa-completo.html)
 - [Materiais e recursos de design instrucional](https://marcelaogioniifes-ops.github.io/design-instrucional/)
 - [Minicurso de biodiversidade](https://marcelaogioniifes-ops.github.io/design-instrucional/minicurso-biodiversidade.html)
 - [Caderno de atividades: Dossiê de campo da restinga](https://marcelaogioniifes-ops.github.io/design-instrucional/dossie-de-campo-restinga.html)
