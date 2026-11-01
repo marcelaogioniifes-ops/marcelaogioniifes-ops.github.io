@@ -4,7 +4,7 @@
 
 Sou licencianda em Ciências Biológicas pela Universidade Federal do Espírito Santo (UFES), Campus Alegre, e Técnica em Pesca pelo IFES, Campus Piúma. Desenvolvo materiais educacionais e recursos de aprendizagem em Ciências e Biologia, com atenção à precisão científica, clareza didática e organização do conteúdo.
 
-Meu portfólio reúne amostras autorais e experiências acadêmicas. Os trabalhos de demonstração estão identificados como tais e não são apresentados como materiais oficiais de instituições ou clientes.
+Meu portfólio reúne amostras autorais e experiências acadêmicas e profissionais. Os trabalhos de demonstração estão identificados como tais e não são apresentados como materiais oficiais de instituições ou clientes. Questões produzidas sob encomenda ou em processos seletivos não são reproduzidas nem adaptadas sem autorização; as amostras públicas são criações independentes.
 
 ## Portfólio profissional
 
@@ -20,6 +20,8 @@ Meu portfólio reúne amostras autorais e experiências acadêmicas. Os trabalho
 | **Educação inclusiva** | Amostras de atividades adaptadas e propostas com atenção à acessibilidade. |
 
 ## Amostras em destaque
+
+**Comece pelas questões autorais:** [abrir seleção de questões de Biologia para ENEM](https://marcelaogioniifes-ops.github.io/enem-biologia/questoes-autorais.html). A página reúne itens independentes, com alternativas, gabaritos comentados e referências.
 
 - [Questões autorais de Biologia](https://marcelaogioniifes-ops.github.io/enem-biologia/questoes-autorais.html)
 - [Portfólio de avaliação educacional](https://marcelaogioniifes-ops.github.io/enem-biologia/portfolio-avaliacao-educacional.html)
