@@ -1,64 +1,27 @@
 # Marcela Ogioni do Nascimento
 
-**Ciências Biológicas | Conteúdo educacional | Elaboração de questões | Design instrucional**
+**Ciências Biológicas · Elaboração de questões · Design instrucional · Materiais didáticos**
 
-Sou licencianda em Ciências Biológicas pela Universidade Federal do Espírito Santo (UFES), Campus Alegre, e Técnica em Pesca pelo IFES, Campus Piúma. Desenvolvo materiais educacionais e recursos de aprendizagem em Ciências e Biologia, com atenção à precisão científica, clareza didática e organização do conteúdo.
+Licencianda em Ciências Biológicas pela Universidade Federal do Espírito Santo (UFES), com conclusão prevista para 2027.1, e técnica em Pesca pelo IFES. Este repositório publica meu portfólio profissional em Ciências e Biologia.
 
-Meu portfólio reúne amostras autorais e experiências acadêmicas e profissionais. Os trabalhos de demonstração estão identificados como tais e não são apresentados como materiais oficiais de instituições ou clientes. Questões produzidas sob encomenda ou em processos seletivos não são reproduzidas nem adaptadas sem autorização; as amostras públicas são criações independentes.
+## Portfólio
 
-## Portfólio profissional
+- **[Página inicial](https://marcelaogioniifes-ops.github.io/)** — apresentação, áreas de atuação e contato.
+- **[Questões autorais de Biologia](https://marcelaogioniifes-ops.github.io/enem-biologia/questoes-autorais.html)** — itens independentes com alternativas, gabaritos comentados e referências.
+- **[Elaboração e avaliação de itens](https://marcelaogioniifes-ops.github.io/enem-biologia/)** — processo de elaboração, revisão e acessibilidade.
+- **[Design instrucional](https://marcelaogioniifes-ops.github.io/design-instrucional/)** — desenho de curso, storyboard, AVA, roteiros e recursos interativos.
+- **[Materiais didáticos](https://marcelaogioniifes-ops.github.io/materiais-autorais/)** — atividades, sequências e propostas para Ciências e Biologia.
+- **[Projetos e pesquisa](https://marcelaogioniifes-ops.github.io/projetos/)** — trabalhos acadêmicos, Educação Ambiental, extensão e pesquisa.
+- **[Currículo](https://marcelaogioniifes-ops.github.io/curriculo/)**
 
-**[Acessar o site BioRascunho](https://marcelaogioniifes-ops.github.io/)**
+## Contato e perfis
 
-| Área | O que você encontrará |
-|---|---|
-| **Elaboração de questões** | Itens autorais de Biologia, alternativas, distratores, gabaritos comentados e referências. |
-| **Avaliação educacional** | Processo de construção e revisão de itens, organização por habilidades e critérios de qualidade. |
-| **Materiais didáticos** | Atividades, sequências didáticas e recursos para o Ensino Fundamental e Médio. |
-| **Design instrucional** | Demonstrações de minicurso, planejamento de curso, caderno de atividades e objeto interativo em HTML. |
-| **Ciência e comunicação** | Pesquisa bibliográfica, síntese de artigos e materiais de divulgação científica. |
-| **Educação inclusiva** | Amostras de atividades adaptadas e propostas com atenção à acessibilidade. |
+- E-mail: marcelaogioni.ifes@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/marcela-ogioni-do-nascimento-95561a390)
+- [Currículo Lattes](https://lattes.cnpq.br/7506620486232467)
 
-## Amostras em destaque
+## Transparência
 
-**Comece pelas questões autorais:** [abrir seleção de questões de Biologia para ENEM](https://marcelaogioniifes-ops.github.io/enem-biologia/questoes-autorais.html). A página reúne itens independentes, com alternativas, gabaritos comentados e referências.
+As questões publicadas são amostras autorais independentes, não itens oficiais do Inep ou da Fuvest. Não foram aplicadas em amostra de estudantes e, portanto, não são apresentadas como psicometricamente calibradas. Materiais produzidos para clientes ou processos seletivos não são reproduzidos sem autorização. Referências e fontes devem ser consultadas nas respectivas páginas.
 
-- [Questões autorais de Biologia](https://marcelaogioniifes-ops.github.io/enem-biologia/questoes-autorais.html)
-- [Portfólio de avaliação educacional](https://marcelaogioniifes-ops.github.io/enem-biologia/portfolio-avaliacao-educacional.html)
-- [Banco de questões comentadas](https://marcelaogioniifes-ops.github.io/enem-biologia/banco-de-questoes.html)
-- [Programa completo de Biologia para o ENEM — Matriz de Referência 2026](https://marcelaogioniifes-ops.github.io/enem-biologia/programa-completo.html)
-- [Materiais e recursos de design instrucional](https://marcelaogioniifes-ops.github.io/design-instrucional/)
-- [Minicurso de biodiversidade](https://marcelaogioniifes-ops.github.io/design-instrucional/minicurso-biodiversidade.html)
-- [Caderno de atividades: Dossiê de campo da restinga](https://marcelaogioniifes-ops.github.io/design-instrucional/dossie-de-campo-restinga.html)
-- [Atividade interativa: cadeia alimentar](https://marcelaogioniifes-ops.github.io/design-instrucional/atividade-interativa-cadeia-alimentar.html)
-- [Projetos acadêmicos e de extensão](https://marcelaogioniifes-ops.github.io/projetos/)
-
-## Competências
-
-- Produção e revisão de conteúdo de Ciências e Biologia
-- Elaboração de questões e atividades avaliativas
-- Pesquisa bibliográfica e revisão técnico-científica
-- Planejamento de aulas e sequências didáticas
-- Produção de materiais educacionais e apresentações
-- Organização de conteúdos para experiências de aprendizagem
-- Educação Ambiental e divulgação científica
-
-## Formação e experiências
-
-- **Licenciatura em Ciências Biológicas — UFES**, Campus Alegre (em andamento; conclusão prevista para 2027.1).
-- **Técnica em Pesca — IFES**, Campus Piúma.
-- **PIBID — CAPES/UFES:** formação docente e desenvolvimento de propostas para a educação básica.
-- **Monitoria de Biologia Celular — UFES:** 60 horas.
-- **Design Instrucional para Nativos e Imigrantes Digitais — ENAP:** 30 horas, concluído.
-
-Para conhecer a trajetória completa, consulte o [currículo e portfólio](https://marcelaogioniifes-ops.github.io/curriculo/) e o [Currículo Lattes](https://lattes.cnpq.br/7506620486232467).
-
-## Contato profissional
-
-- **E-mail:** [marcelaogioni.ifes@gmail.com](mailto:marcelaogioni.ifes@gmail.com)
-- **LinkedIn:** [Marcela Ogioni do Nascimento](https://www.linkedin.com/in/marcela-ogioni-do-nascimento-95561a390)
-- **Portfólio:** [marcelaogioniifes-ops.github.io](https://marcelaogioniifes-ops.github.io/)
-
----
-
-*Este repositório publica o site do portfólio BioRascunho. As páginas distinguem experiências formativas, trabalhos realizados e amostras autorais de demonstração.*
+Este site é mantido em HTML e CSS e publicado pelo GitHub Pages.
