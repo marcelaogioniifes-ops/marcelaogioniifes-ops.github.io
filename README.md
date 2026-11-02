@@ -11,6 +11,8 @@ Licencianda em Ciências Biológicas pela UFES (conclusão prevista: 2027.1) e t
 - [Materiais didáticos](https://marcelaogioniifes-ops.github.io/materiais-autorais/)
 - [Projetos](https://marcelaogioniifes-ops.github.io/projetos/)
 - [Currículo](https://marcelaogioniifes-ops.github.io/curriculo/)
+- [Brazilian Portuguese Language Services](https://marcelaogioniifes-ops.github.io/language-services/)
+- [Copywriting & Scientific Content](https://marcelaogioniifes-ops.github.io/copywriting/)
 
 ## Contato
 
